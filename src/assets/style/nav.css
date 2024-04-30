@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: #dc3546;
+    color: white;
+    border-radius: 10px;
+
+}
