@@ -1,5 +1,7 @@
+// import { createContext } from 'react'
+// import RuleComponent1 from './components/RuleComponent1'
+// import RuleComponent2 from './components/RuleComponent2'
 
-import { BrowserRouter } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Router from "./routes/Router";
 import './App.css'
@@ -8,10 +10,14 @@ function App() {
 
   return (
     <>
-        <BrowserRouter>
+
+      <div className="App">
+
         <NavBar />
-          <Router />
-      </BrowserRouter>
+        <Router />
+
+      </div>
+      
     </>
   )
 }

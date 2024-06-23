@@ -1,21 +1,23 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import Contacto from "../pages/Contacto";
+import Pokemones from "../pages/Pokemones";
 import NotFound from "../pages/NotFound";
+import Personajes from "../pages/Personajes";
 
+function Router() {
 
-function Router(){
+  return (
+    
+    <Routes>
 
-    return(
-        <Routes>
-        
-        <Route path="/" element={<Home/>} />
-        <Route path="/contacto" element={<Contacto/> }/>         
-        <Route path="*" element={<NotFound/>} />       
+      <Route path="/" element={<Home />} />
+      <Route path="/pokemones" element={<Pokemones />} />
+      <Route path="/personajes/:name" element={<Personajes />} /> 
+      <Route path="*" element={<NotFound />} />
 
-      </Routes>  
+    </Routes>
 
-    );
+  );
 }
 
 export default Router;
